@@ -193,3 +193,8 @@ Counter
     border-radius: var(--radius);
     margin: 0.5rem;
 }
+
+.btn:hover {
+    color: var(--clr-white);
+    background: var(--clr-black);
+}
