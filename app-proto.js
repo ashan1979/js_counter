@@ -25,3 +25,15 @@ function Counter (element, value) {
     this.resetBtn.addEventListener("click", this.reset);
 }
 
+Counter.prototype.increase =  function () {
+    this.value++;
+    this.valueDOM.textContent = this.value;
+};
+Counter.prototype.decrease =  function () {
+    this.value--;
+    this.valueDOM.textContent = this.value;
+};
+Counter.prototype.reset =  function () {
+    this.value = 0;
+    this.valueDOM.textContent = this.value;
+};
