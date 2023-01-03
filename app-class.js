@@ -27,4 +27,20 @@ class Counter {
         this.decreaseBtn.addEventListener('click', this.decrease);
         this.resetBtn.addEventListener('click', this.reset);
     }
+
+    increase() {
+        this.value++;
+        this.valueDOM.textContent = this.value;
+    }
+    decrease() {
+        this.value--;
+        this.valueDOM.textContent = this.value;
+    }
+    reset() {
+        this.value = 0;
+        this.valueDOM.textContent = this.value;
+    }
 }
+
+const firstCounter = new Counter(getElement('.first-counter'), 100);
+const secondCounter = new Counter(getElement('.second-counter'), 200);
